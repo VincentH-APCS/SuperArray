@@ -15,6 +15,9 @@ public class SuperArray{
   }
   public boolean add(String element){
     int check = 0;
+    if(data.size() == data.length){
+      data.resize();
+    }
     for(int i = 0; i < data.length; i++){
       if(data[i] == null){
        data[i] = element;
@@ -33,7 +36,7 @@ public class SuperArray{
     data[index] = element;
     return old;
   }
-  public void resize(){
+  private void resize(){
   String[] nexus = new String[data.length + 10];
   for(int i = 0; i < data.length; i++){
     nexus[i] = data[i];
