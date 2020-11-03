@@ -14,8 +14,6 @@ public class Tester{
    if(Mega.add("Time")){
     System.out.println(Mega.get(3));
    }
-  //System.out.println(Mega.set(3, ", there"));
-   //System.out.println(Mega.get(3));
    if(Mega.add("There")){
      System.out.println(Mega.get(4));
    }
@@ -34,10 +32,42 @@ public class Tester{
   if(Mega.add("Haunted")){
     System.out.println(Mega.get(9));
   }
-  //Mega.resize();
-  if(Mega.add("People")){
+  if(Mega.add("People.")){
     System.out.println(Mega.get(10));
   }
+  if(Mega.add("Once")){
+    System.out.println(Mega.get(11));
+  }
+ if(Mega.add("They")){
+   System.out.println(Mega.get(12));
+ }
+ if(Mega.add("Type")){
+   System.out.println(Mega.get(13));
+ }
+ if(Mega.add("It")){
+  System.out.println(Mega.get(14));
+ }
+ if(Mega.add("Into")){
+   System.out.println(Mega.get(15));
+ }
+ if(Mega.add("A")){
+  System.out.println(Mega.get(16));
+ }
+ if(Mega.add("Program")){
+  System.out.println(Mega.get(17));
+ }
+ if(Mega.add("They")){
+ System.out.println(Mega.get(18));
+ }
+ if(Mega.add("Must")){
+   System.out.println(Mega.get(19));
+ }
+if(Mega.add("Dance")){
+  System.out.println(Mega.get(20));
+}
+if(Mega.add("In Their Seat")){
+  System.out.println(Mega.get(21));
+}
    System.out.println(Mega.size());
  }
 }
