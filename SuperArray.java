@@ -15,8 +15,8 @@ public class SuperArray{
   }
   public boolean add(String element){
     int check = 0;
-    if(data.size() == data.length){
-      data.resize();
+    if(size == data.length){
+      resize();
     }
     for(int i = 0; i < data.length; i++){
       if(data[i] == null){
