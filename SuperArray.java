@@ -13,4 +13,16 @@ public class SuperArray{
     }
     return total;
   }
+  public boolean add(String element){
+    int check = 0;
+    for(int i = 0; i < data.length; i++){
+      if(data[i] == null){
+        i = data.length;
+      data[i] = element;
+        check = 1;
+      }
+    }
+    size = size + 1;
+    return (check == 1);
+  }
 }
