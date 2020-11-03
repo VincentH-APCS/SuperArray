@@ -33,4 +33,11 @@ public class SuperArray{
     data[index] = element;
     return old;
   }
+  public void resize(){
+  String[] nexus = new String[data.length + 10];
+  for(int i = 0; i < data.length; i++){
+    nexus[i] = data[i];
+  }
+  data = nexus;
+}
 }
