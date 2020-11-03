@@ -17,8 +17,8 @@ public class SuperArray{
     int check = 0;
     for(int i = 0; i < data.length; i++){
       if(data[i] == null){
+       data[i] = element;
         i = data.length;
-      data[i] = element;
         check = 1;
       }
     }
