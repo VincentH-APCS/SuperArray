@@ -8,5 +8,10 @@ public class Tester{
    System.out.println(Mega.size());
    System.out.println(Mega.add("Time"));
    System.out.println(Mega.size());
+   System.out.println(Mega.get(0));
+   System.out.println(Mega.get(1));
+   System.out.println(Mega.get(2));
+   System.out.println(Mega.get(3));
+
  }
 }
