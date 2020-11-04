@@ -55,9 +55,17 @@ public class SuperArray{
     String bigOne = "[";
     for(int i = 0; i < data.length - 1; i++){
       if(data[i] != null){
-        bigOne = bigOne + data[i] + ",";
+        bigOne = bigOne + data[i];
+      }
+      if(data[i + 1] != null){
+        bigOne = bigOne + ",";
       }
     }
-    return bigOne + data[data.length - 1] + ",";
+    if(data[data.length - 1] == null){
+    return bigOne +  "]";
   }
+  else {
+    return bigOne + data[data.length - 1] + "]";
+  }
+}
 }
