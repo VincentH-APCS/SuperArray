@@ -68,4 +68,12 @@ public class SuperArray{
     return bigOne + data[data.length - 1] + "]";
   }
 }
+  public boolean contains(String s){
+    for(int i = 0; i < data.length; i++){
+      if(data[i] != null && data[i].equals(s)){
+        return true;
+      }
+    }
+  return false;
+  }
 }
