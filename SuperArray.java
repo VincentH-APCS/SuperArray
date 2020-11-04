@@ -51,4 +51,13 @@ public class SuperArray{
   public boolean isEmpty(){
     return (size == 0);
   }
+  public String toString(){
+    String bigOne = "[";
+    for(int i = 0; i < data.length - 1; i++){
+      if(data[i] != null){
+        bigOne = bigOne + data[i] + ",";
+      }
+    }
+    return bigOne + data[data.length - 1] + ",";
+  }
 }
