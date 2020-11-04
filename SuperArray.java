@@ -76,4 +76,8 @@ public class SuperArray{
     }
   return false;
   }
+  public SuperArray(int initialCapacity){
+    data = new String[initialCapacity];
+  }
 }
+//for the toarray DO NOT USE SAME ADDRESS
