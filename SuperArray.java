@@ -80,12 +80,19 @@ public class SuperArray{
     data = new String[initialCapacity];
   }
   public void add(int index, String element){
-    for(int i = index + 1; i < data.length; i++){
-      if(data[i] != null){
-        data[i] = data[i - 1];
-      }
+    size = size + 1;
+    if(size > data.length){
+      resize();
     }
-    data[index] = element;
-  }
+    String[] newone = new String[data.length + 1];
+    for(int i = 0; i < index - 1; i++){
+      newone[i] = data[i];
+    }
+    newone[index] = element;
+    for(int j = index + 1; j < newone.length; j++){
+      newone[j] = data[j - 1];
+    }
+    data = newone;
+}
 }
 //for the toarray DO NOT USE SAME ADDRESS
