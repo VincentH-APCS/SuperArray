@@ -1,6 +1,6 @@
 public class Tester{
  public static void main(String[] args){
-   SuperArray Mega = new SuperArray();
+   SuperArray Mega = new SuperArray(5);
   System.out.println(Mega.add("Dragons"));
   System.out.println(Mega.add("Live"));
   System.out.println(Mega.add("In the Caves"));
