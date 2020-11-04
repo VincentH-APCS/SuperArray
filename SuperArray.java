@@ -46,5 +46,9 @@ public class SuperArray{
   public void clear(){
     String[] voider = new String[data.length];
     data = voider;
+    size = 0;
+  }
+  public boolean isEmpty(){
+    return (size == 0);
   }
 }
