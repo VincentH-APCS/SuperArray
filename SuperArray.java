@@ -43,5 +43,8 @@ public class SuperArray{
   }
   data = nexus;
 }
+  public void clear(){
+    String[] voider = new String[data.length];
+    data = voider;
+  }
 }
-// : ]
