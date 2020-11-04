@@ -79,5 +79,13 @@ public class SuperArray{
   public SuperArray(int initialCapacity){
     data = new String[initialCapacity];
   }
+  public void add(int index, String element){
+    for(int i = index + 1; i < data.length; i++){
+      if(data[i] != null){
+        data[i] = data[i - 1];
+      }
+    }
+    data[index] = element;
+  }
 }
 //for the toarray DO NOT USE SAME ADDRESS
