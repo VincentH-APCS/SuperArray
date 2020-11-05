@@ -20,5 +20,6 @@ public class Tester{
   System.out.println(Mega.indexOf("Far"));
   System.out.println(Mega.indexOf("Carmen Sandiego"));
   System.out.println(Mega.indexOf("negative 1"));
+  System.out.println(Mega.toArray());
 }
 }
