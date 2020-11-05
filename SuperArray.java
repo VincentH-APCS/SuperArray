@@ -110,7 +110,7 @@ public String remove(int index){
 public int indexOf(String s){
   int waldo = -1;
   for(int i = 0; i < data.length; i++){
-    if(data[i].equals(s)){
+    if(data[i] != null && data[i].equals(s)){
       waldo = i;
       i = data.length;
     }
