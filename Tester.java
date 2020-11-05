@@ -8,8 +8,8 @@ public class Tester{
   Mega.add(3, "Caves");
   Mega.add(4, "Far From");
   Mega.add(5, "The Castles.");
-  Mega.add(6, "Invisble Ghost"));
-  Mega.add(7, "Magic--disappear"));
+  Mega.add(6, "Invisble Ghost");
+  Mega.add(7, "Magic--disappear");
   System.out.println(Mega.size());
   System.out.println(Mega.remove(7));
   System.out.println(Mega.toString());
