@@ -102,7 +102,7 @@ public String remove(int index){
     smaller[i] = data[i];
   }
   for(int j = index + 1; j < data.length; j++){
-    smaller[j] = data[j - 1];
+    smaller[j] = data[j];
   }
   data = smaller;
   return gone;
