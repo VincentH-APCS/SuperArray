@@ -107,5 +107,15 @@ public String remove(int index){
   data = smaller;
   return gone;
 }
+public int indexOf(String s){
+  int waldo = -1;
+  for(int i = 0; i < data.length; i++){
+    if(data[i].equals(s)){
+      waldo = i;
+      i = data.length;
+    }
+  }
+  return waldo;
+}
 }
 //for the toarray DO NOT USE SAME ADDRESS
