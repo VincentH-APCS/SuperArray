@@ -6,12 +6,13 @@ public class Tester{
   Mega.add(1,"Live");
   Mega.add(2,"In The");
   Mega.add(3, "Caves");
-  Mega.add(4, "Far From");
-  Mega.add(5, "The Castles.");
-  Mega.add(6, "Invisble Ghost");
-  Mega.add(7, "Magic--disappear");
+  Mega.add(4, "Magic--disappear");
+  Mega.add(5, "Far From");
+  Mega.add(6, "Invisible Ghost");
+  Mega.add(6, "The Castles.");
+  Mega.add(8, "Magic--disappear");
   System.out.println(Mega.size());
-  System.out.println(Mega.remove(7));
+  System.out.println(Mega.remove(4));
   System.out.println(Mega.toString());
   System.out.println(Mega.size());
   System.out.println(Mega.indexOf("In The"));
