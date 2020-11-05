@@ -118,11 +118,15 @@ public int indexOf(String s){
   return waldo;
 }
 public String[] toArray(){
+//public boolean toArray(){
   String[] post = new String[size];
   for(int i = 0; i < size; i++){
     post[i] = data[i];
   }
   return post;
+}
+public String[] getData(){
+  return data;
 }
 }
 //for the toarray DO NOT USE SAME ADDRESS
