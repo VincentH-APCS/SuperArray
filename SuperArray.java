@@ -117,5 +117,12 @@ public int indexOf(String s){
   }
   return waldo;
 }
+public String[] toArray(){
+  String[] post = new String[size];
+  for(int i = 0; i < size; i++){
+    post[i] = data[i];
+  }
+  return post;
+}
 }
 //for the toarray DO NOT USE SAME ADDRESS
