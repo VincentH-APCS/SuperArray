@@ -10,7 +10,6 @@ public class Tester{
   Mega.add(5, "Far From");
   Mega.add(6, "Invisible Ghost");
   Mega.add(6, "The Castles.");
-  Mega.add(8, "Magic--disappear");
   System.out.println(Mega.size());
   System.out.println(Mega.remove(4));
   System.out.println(Mega.toString());
