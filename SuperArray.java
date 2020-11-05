@@ -94,5 +94,18 @@ public class SuperArray{
     }
     data = newone;
 }
+public String remove(int index){
+  size = size - 1;
+  String gone = data[index];
+  String[] smaller = new String[data.length];
+  for(int i = 0; i < index; i++){
+    smaller[i] = data[i];
+  }
+  for(int j = index + 1; j < data.length; j++){
+    smaller[j] = data[j - 1];
+  }
+  data = smaller;
+  return gone;
+}
 }
 //for the toarray DO NOT USE SAME ADDRESS
