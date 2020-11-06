@@ -128,5 +128,17 @@ public String[] toArray(){
 public String[] getData(){
   return data;
 }
+public static void removeDuplicates(SuperArray s){
+  SuperArray singles = new SuperArray(s.size());
+  for(int i = 0; i < s.size(); i++){
+    if(singles.contains(s.get(i))) {
+      singles = singles;
+    }
+    else{
+      singles.add(s.get(i));
+    }
+  }
+  //data = singles;
+}
 }
 //for the toarray DO NOT USE SAME ADDRESS
