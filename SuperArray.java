@@ -132,7 +132,7 @@ public static void removeDuplicates(SuperArray s){
   SuperArray singles = new SuperArray(s.size());
   for(int i = 0; i < s.size(); i++){
     if(singles.contains(s.get(i))) {
-      singles = singles;
+      s.remove(i);
     }
     else{
       singles.add(s.get(i));
