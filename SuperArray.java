@@ -118,7 +118,6 @@ public int indexOf(String s){
   return waldo;
 }
 public String[] toArray(){
-//public boolean toArray(){
   String[] post = new String[size];
   for(int i = 0; i < size; i++){
     post[i] = data[i];
@@ -128,7 +127,7 @@ public String[] toArray(){
 public String[] getData(){
   return data;
 }
-public static void removeDuplicates(SuperArray s){
+/*public static void removeDuplicates(SuperArray s){
   SuperArray singles = new SuperArray(s.size());
   for(int i = 0; i < s.size(); i++){
     if(singles.contains(s.get(i))) {
@@ -139,6 +138,18 @@ public static void removeDuplicates(SuperArray s){
     }
   }
   //data = singles;
+}*/
+public static void removeDuplicates(SuperArray s){
+  for(int i = 0; i < s.size() - 1; i++){
+    for(int j = i + 1; j < s.size();){
+      if (s.get(i).equals(s.get(j))){
+        s.remove(j);
+      }
+      else{
+        j++;
+      }
+    }
+  }
 }
 }
 //for the toarray DO NOT USE SAME ADDRESS
