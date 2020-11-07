@@ -127,15 +127,13 @@ public String[] toArray(){
 public String[] getData(){
   return data;
 }
-/*public static void removeDuplicates(SuperArray s){
-  for(int i = 0; i < s.size(); i++){
-    if(s.indexOf(s.get(i)) == i){
-      i = i;
-    }
-    else{
-      s.remove(i);
-      i = i - 1;
+public int lastIndexOf(String value){
+  int waldo = -1;
+  for(int i = size; i > 0; i--){
+    if(data[i].equals(value) && i > waldo){
+      waldo = i;
     }
   }
-}*/
+  return waldo;
+}
 }
