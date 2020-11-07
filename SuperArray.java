@@ -136,4 +136,18 @@ public int lastIndexOf(String value){
   }
   return waldo;
 }
+public boolean equals(SuperArray other){
+  if(size != other.size()){
+    return false;
+  }
+  for(int i = 0; i < size; i++){
+    if(data[i].equals(other.get(i))) {
+      i = i;
+    }
+    else{
+      return false;
+    }
+  }
+  return true;
+}
 }
