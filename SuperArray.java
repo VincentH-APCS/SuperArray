@@ -58,7 +58,7 @@ public class SuperArray{
         bigOne = bigOne + data[i];
       }
       if(data[i + 1] != null){
-        bigOne = bigOne + ",";
+        bigOne = bigOne + ", ";
       }
     }
     if(data[data.length - 1] == null){
@@ -102,10 +102,11 @@ public String remove(int index){
     smaller[i] = data[i];
   }
   for(int j = index + 1; j < data.length; j++){
-    smaller[j] = data[j];
+    smaller[j - 1] = data[j];
   }
   data = smaller;
   return gone;
+
 }
 public int indexOf(String s){
   int waldo = -1;
