@@ -5,13 +5,13 @@ public class SuperArray{
     data = new String[10];
   }
   public int size(){
-    int total = 0;
+    /*int total = 0;
     for(int i = 0; i < data.length; i++){
       if(data[i] != null){
         total = total + 1;
       }
-    }
-    return total;
+    }*/
+    return size;
   }
   public boolean add(String element){
     int check = 0;
@@ -97,9 +97,14 @@ public class SuperArray{
 public String remove(int index){
   size = size - 1;
   String gone = data[index];
-  for(int i = index; i < size; i++){
-    data[i] = data[i - 1];
+  String[] smaller = new String[data.length];
+  for(int i = 0; i < index; i++){
+    smaller[i] = data[i];
   }
+  for(int j = index + 1; j < data.length; j++){
+    smaller[j] = data[j];
+  }
+  data = smaller;
   return gone;
 }
 public int indexOf(String s){
