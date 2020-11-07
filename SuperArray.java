@@ -129,7 +129,7 @@ public String[] getData(){
 }
 public int lastIndexOf(String value){
   int waldo = -1;
-  for(int i = size; i > 0; i--){
+  for(int i = size - 1; i > 0; i--){
     if(data[i].equals(value) && i > waldo){
       waldo = i;
     }
