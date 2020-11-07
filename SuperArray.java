@@ -97,14 +97,9 @@ public class SuperArray{
 public String remove(int index){
   size = size - 1;
   String gone = data[index];
-  String[] smaller = new String[data.length];
-  for(int i = 0; i < index; i++){
-    smaller[i] = data[i];
+  for(int i = index; i < size; i++){
+    data[i] = data[i - 1];
   }
-  for(int j = index + 1; j < data.length; j++){
-    smaller[j] = data[j];
-  }
-  data = smaller;
   return gone;
 }
 public int indexOf(String s){
@@ -128,28 +123,14 @@ public String[] getData(){
   return data;
 }
 /*public static void removeDuplicates(SuperArray s){
-  SuperArray singles = new SuperArray(s.size());
   for(int i = 0; i < s.size(); i++){
-    if(singles.contains(s.get(i))) {
-      s.remove(i);
+    if(s.indexOf(s.get(i)) == i){
+      i = i;
     }
     else{
-      singles.add(s.get(i));
+      s.remove(i);
+      i = i - 1;
     }
   }
-  //data = singles;
 }*/
-public static void removeDuplicates(SuperArray s){
-  for(int i = 0; i < s.size() - 1; i++){
-    for(int j = i + 1; j < s.size();){
-      if (s.get(i).equals(s.get(j))){
-        s.remove(j);
-      }
-      else{
-        j++;
-      }
-    }
-  }
 }
-}
-//for the toarray DO NOT USE SAME ADDRESS
