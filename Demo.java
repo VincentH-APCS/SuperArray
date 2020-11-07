@@ -24,15 +24,16 @@ for(int i = s.size(); i > 0; i--){
     SuperArray words = new SuperArray();
     words.add("kani");  words.add("uni"); words.add("ebi");
     words.add("una"); words.add("una"); words.add("ebi");
+    words.add("another"); words.add("uni"); words.add("numb");
     /*words.add("kani"); words.add("una"); words.add("una");
     words.add("ebi"); words.add("toro");
     words.add("ebi"); words.add("toro");*/
     SuperArray letters = new SuperArray();
     letters.add("uni"); letters.add("dino"); letters.add("four");
-    letters.add("kani");
+    letters.add("kani"); letters.add("uni"); letters.add("test");
 
     System.out.println(words);
     System.out.println(letters);
-    System.out.println(findOverlap(words, letters));
+    System.out.println(findOverlap(letters, words));
   }
 }
