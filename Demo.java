@@ -20,6 +20,23 @@ public class Demo{
     }
     return likes;
   }
+  public static SuperArray zip(SuperArray a, SuperArray b){
+    SuperArray per = new SuperArray();
+    int longer = 0;
+    if(a.size() > b.size()){
+      longer = a.size();
+    }
+    else longer = b.size();
+    for(int i = 0; i < longer; i++){
+      if(a.get(i) != null){
+        per.add(a.get(i));
+      }
+      if(b.get(i) != null){
+        per.add(b.get(i));
+      }
+    }
+    return per;
+  }
 
   public static void main(String[] args){
     SuperArray words = new SuperArray();
@@ -30,22 +47,17 @@ public class Demo{
     words.add("ebi"); words.add("toro");
     words.add("ebi"); words.add("toro");*/
     SuperArray letters = new SuperArray();
-    letters.add("dino"); letters.add("four"); letters.add("uni");
-    letters.add("kani"); letters.add("uni"); letters.add("test");
+    letters.add("dino"); letters.add("rode"); letters.add("semi-");
+    letters.add("up"); letters.add("giant"); letters.add("on");
     SuperArray letterz = new SuperArray();
-    letterz.add("dino"); letterz.add("four"); letterz.add("uni");
-    letterz.add("kani"); letterz.add("uni"); letterz.add("test");
+    letterz.add("saur"); letterz.add("the"); letterz.add("truck");
+    letterz.add("the"); letterz.add("hill"); letterz.add("Friday");
 
-    System.out.println(words);
     System.out.println(letters);
     System.out.println(letterz);
-    System.out.println(words.size());
-    System.out.println(words.size());
     System.out.println(letters.size());
+    System.out.println(letterz.size());
+    System.out.println(zip(letters, letterz));
 
-    System.out.println(words.equals(letters));
-    System.out.println(words.equals(letterz));
-    System.out.println(letters.equals(letterz));
-    System.out.println(letterz.equals(letters));
   }
 }
