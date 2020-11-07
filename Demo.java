@@ -40,12 +40,9 @@ public class Demo{
 
   public static void main(String[] args){
     SuperArray words = new SuperArray();
-    words.add("kani");  words.add("uni"); words.add("ebi");
-    words.add("una"); words.add("una"); words.add("ebi");
-    words.add("another"); words.add("uni"); words.add("numb");
-    /*words.add("kani"); words.add("una"); words.add("una");
-    words.add("ebi"); words.add("toro");
-    words.add("ebi"); words.add("toro");*/
+    words.add("kani");   words.add("uni");     words.add("ebi");     words.add("una");     
+    words.add("una");    words.add("ebi");     words.add("kani");    words.add("una");
+    words.add("una");    words.add("ebi");     words.add("toro");
     SuperArray letters = new SuperArray();
     letters.add("dino"); letters.add("rode"); letters.add("semi-");
     letters.add("up"); letters.add("giant"); letters.add("on");
@@ -58,6 +55,9 @@ public class Demo{
     System.out.println(letters.size());
     System.out.println(letterz.size());
     System.out.println(zip(letters, letterz));
+    System.out.println(words);
+    removeDuplicates(words);
+    System.out.println(words);
 
   }
 }
