@@ -32,11 +32,20 @@ public class Demo{
     SuperArray letters = new SuperArray();
     letters.add("dino"); letters.add("four"); letters.add("uni");
     letters.add("kani"); letters.add("uni"); letters.add("test");
+    SuperArray letterz = new SuperArray();
+    letterz.add("dino"); letterz.add("four"); letterz.add("uni");
+    letterz.add("kani"); letterz.add("uni"); letterz.add("test");
 
     System.out.println(words);
     System.out.println(letters);
-    System.out.println(words.lastIndexOf("numb"));
-    System.out.println(words.lastIndexOf("ebi"));
-    System.out.println(letters.lastIndexOf("dino"));
+    System.out.println(letterz);
+    System.out.println(words.size());
+    System.out.println(words.size());
+    System.out.println(letters.size());
+
+    System.out.println(words.equals(letters));
+    System.out.println(words.equals(letterz));
+    System.out.println(letters.equals(letterz));
+    System.out.println(letterz.equals(letters));
   }
 }
