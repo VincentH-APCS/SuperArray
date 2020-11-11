@@ -15,25 +15,25 @@ public class ExceptionTester{
     System.out.println(Mega.size());
 
   try{
-    Mega.add(-5, "error");
+    Mega.remove(-5);
   } catch(
     IndexOutOfBoundsException e){
       System.out.println("No Negatives!");
     }
     try{
-      Mega.add(555, "elephant");
+      Mega.remove(555);
     } catch(
       IndexOutOfBoundsException e){
         System.out.println("TOO BIG!");
       }
       try{
-        Mega.add(5, "samesies");
+        Mega.remove(5);
       } catch(
         IndexOutOfBoundsException e){
           System.out.println("There can only be one");
         }
      try{
-          Mega.add(4, "No Problemo?");
+          Mega.remove(4);
         } catch(
           IndexOutOfBoundsException e){
             System.out.println("Oh no");
