@@ -113,6 +113,14 @@ public class SuperArray{
     data = newone;
 }
 public String remove(int index){
+  if(index < 0){
+    throw new IndexOutOfBoundsException("Index " +index+
+    " is not allowed to be negative by convention");
+  }
+  if(index >= size){
+    throw new IndexOutOfBoundsException("Index" +index+
+    " is prohibited from being equal to or greater than the size");
+  }
   size = size - 1;
   String gone = data[index];
   String[] smaller = new String[data.length];
@@ -170,3 +178,4 @@ public boolean equals(SuperArray other){
   return true;
 }
 }
+//:]
