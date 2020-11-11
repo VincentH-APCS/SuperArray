@@ -40,7 +40,7 @@ public class Demo{
 
   public static void main(String[] args){
     SuperArray words = new SuperArray();
-    words.add("kani");   words.add("uni");     words.add("ebi");     words.add("una");     
+    words.add("kani");   words.add("uni");     words.add("ebi");     words.add("una");
     words.add("una");    words.add("ebi");     words.add("kani");    words.add("una");
     words.add("una");    words.add("ebi");     words.add("toro");
     SuperArray letters = new SuperArray();
