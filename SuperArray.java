@@ -23,9 +23,9 @@ public class SuperArray{
     return (check == 1);
   }
   public String get(int index){
-    if(index < 0 || index > size){
+    if(index < 0 || index >= size){
       throw new IndexOutOfBoundsException("Index" +index+
-      "cannot be negative nor less than the size");
+      "cannot be negative nor equal to nor greater than the size");
     }
     return data[index];
   }
