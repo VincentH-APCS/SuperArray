@@ -5,12 +5,6 @@ public class SuperArray{
     data = new String[10];
   }
   public int size(){
-    /*int total = 0;
-    for(int i = 0; i < data.length; i++){
-      if(data[i] != null){
-        total = total + 1;
-      }
-    }*/
     return size;
   }
   public boolean add(String element){
@@ -77,6 +71,10 @@ public class SuperArray{
   return false;
   }
   public SuperArray(int initialCapacity){
+    if(initialCapacity < 0){
+      throw new IllegalArgumentException("Initial Capacity" + initialCapacity+
+      "cannot be negative");
+    }
     data = new String[initialCapacity];
   }
   public void add(int index, String element){
