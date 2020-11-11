@@ -90,6 +90,14 @@ public class SuperArray{
     data = new String[initialCapacity];
   }
   public void add(int index, String element){
+    if(index < 0){
+      throw new IndexOutOfBoundsException("Index " +index+
+      " is not allowed to be negative by convention");
+    }
+    if(index >= size){
+      throw new IndexOutOfBoundsException("Index" +index+
+      " is prohibited from being equal to or greater than the size");
+    }
     size = size + 1;
     if(size > data.length){
       resize();
