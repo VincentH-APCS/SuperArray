@@ -94,9 +94,9 @@ public class SuperArray{
       throw new IndexOutOfBoundsException("Index " +index+
       " is not allowed to be negative by convention");
     }
-    if(index >= size){
+    if(index > size){
       throw new IndexOutOfBoundsException("Index" +index+
-      " is prohibited from being equal to or greater than the size");
+      " is prohibited from being greater than the size");
     }
     size = size + 1;
     if(size > data.length){
